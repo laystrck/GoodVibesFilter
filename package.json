@@ -1,7 +1,36 @@
 {
     "name": "goodvibesfilter",
     "version": "1.0.0",
-    "private": true,
+    "description": "GoodVibesFilter macht deine Playlists frei von Deutschrap",
+    "keywords": [
+        "playlist",
+        "music",
+        "filter",
+        "web",
+        "app",
+        "spotify"
+    ],
+    "homepage": "https://goodvibesfilter.layst.rocks",
+    "bugs": {
+        "url": "https://github.com/laystrck/GoodVibesFilter/issues"
+    },
+    "license": "UNLICENSED",
+    "author": {
+        "name": "Jarne",
+        "email": "jarne@layst.rocks",
+        "url": "https://github.com/jarne"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/laystrck/GoodVibesFilter.git"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
     "dependencies": {
         "bootstrap": "^4.5",
         "node-sass": "^4.0",
@@ -16,13 +45,7 @@
     "devDependencies": {
         "prettier": "^2.1"
     },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-    },
+    "private": true,
     "eslintConfig": {
         "extends": [
             "react-app"
