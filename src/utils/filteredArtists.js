@@ -6,7 +6,8 @@ exports.filteredArtistsList = [
     "Capital Bra",
     "Apache 207",
     "Loredana",
-    "Bonzez MC",
+    "Bonez MC",
+    "AK AUSSERKONTROLLE",
     "RAF Camora",
     "KC Rebell",
     "Summer Cem",
@@ -17,4 +18,5 @@ exports.filteredArtistsList = [
     "Bozza",
     "Shindy",
     "Bausa",
+    "Fler",
 ]

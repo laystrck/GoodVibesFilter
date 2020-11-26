@@ -81,7 +81,7 @@ function App() {
                     }
                 )
             })
-            .catch((err) => {
+            .catch(() => {
                 toast("Hoppla, da ist ein Fehler aufgetreten!", {
                     className: "cst-error-toast",
                 })

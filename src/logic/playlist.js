@@ -6,37 +6,47 @@ import { filteredArtistsList } from "./../utils/filteredArtists"
 
 export const createFilteredPlaylist = (spotify, plId) => {
     return new Promise((resolve, reject) => {
-        spotify.getPlaylist(plId).then(
+        spotify.getMe().then(
             (data) => {
-                const uId = data.owner.id
-                const plName = data.name
-                const fUris = filterUris(data.tracks.items)
+                const uId = data.id
 
-                spotify
-                    .createPlaylist(uId, {
-                        name: plName + " (GoodVibesFilter)",
-                        public: false,
-                    })
-                    .then(
-                        (data) => {
-                            const plId = data.id
+                spotify.getPlaylist(plId).then(
+                    (data) => {
+                        const plName = data.name
+                        const fUris = filterUris(data.tracks.items)
 
-                            spotify.addTracksToPlaylist(plId, fUris).then(
-                                () => {
-                                    resolve()
+                        spotify
+                            .createPlaylist(uId, {
+                                name: plName + " (GoodVibesFilter)",
+                                public: false,
+                            })
+                            .then(
+                                (data) => {
+                                    const plId = data.id
+
+                                    spotify
+                                        .addTracksToPlaylist(plId, fUris)
+                                        .then(
+                                            () => {
+                                                resolve()
+                                            },
+                                            () => {
+                                                reject("playlist_fill_error")
+                                            }
+                                        )
                                 },
                                 () => {
-                                    reject("playlist_fill_error")
+                                    reject("playlist_create_error")
                                 }
                             )
-                        },
-                        () => {
-                            reject("playlist_create_error")
-                        }
-                    )
+                    },
+                    () => {
+                        reject("playlist_read_error")
+                    }
+                )
             },
             () => {
-                reject("playlist_read_error")
+                reject("user_info_read_error")
             }
         )
     })
