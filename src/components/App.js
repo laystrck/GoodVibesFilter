@@ -90,7 +90,7 @@ function App() {
 
     return (
         <div className="container center-content">
-            <div className="text-center">
+            <div className="content-box text-center">
                 <h1 className="main-title">
                     GoodVibesFilter{" "}
                     <span role="img" aria-label="CD & cool">

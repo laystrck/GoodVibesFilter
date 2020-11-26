@@ -8,14 +8,26 @@ html, body, #root, .container {
 
 .center-content {
     display: flex;
+}
 
-    justify-content: center;
-    align-items: center;
+.content-box {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .main-title {
-    font-size: 72px;
+    font-size: 10vw;
     font-weight: 700;
+}
+
+@media (min-width: 992px) {
+    .main-title {
+        font-size: 72px;
+        font-weight: 700;
+    }
 }
 
 .spotify-login-area {
