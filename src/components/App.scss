@@ -34,8 +34,20 @@ html, body, #root, .container {
     margin-top: 24px;
 }
 
+.playlist-select-area,
+.playlist-input-area {
+    max-width: 576px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .playlist-select-area {
     margin-top: 32px;
+}
+
+.playlist-input-area {
+    margin-top: 16px;
 }
 
 .action-description {

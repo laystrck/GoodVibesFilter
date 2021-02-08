@@ -12,14 +12,11 @@ function PlaylistSelect(props) {
 
     useEffect(() => {
         spotify.getUserPlaylists().then(
-            (data) => {
-                setPlaylists(data.items)
-            },
-            () => {
+            (data) => setPlaylists(data.items),
+            () =>
                 toast("Hoppla, wir konnten dich nicht bei Spotify anmelden!", {
                     className: "cst-error-toast",
                 })
-            }
         )
     }, [spotify, setPlaylists])
 
@@ -41,11 +38,12 @@ function PlaylistSelect(props) {
 
     return (
         <div className="playlist-select-area">
-            <p>Welche Playlist möchtest du auswählen?</p>
+            <label for="plSelect">Welche Playlist möchtest du auswählen?</label>
             <select
                 defaultValue="-1"
                 onChange={handlePlChange}
                 className="custom-select"
+                id="plSelect"
             >
                 <option value="-1">Bitte wähle eine Playlist...</option>
                 {playlists.map((plData, pI) => (

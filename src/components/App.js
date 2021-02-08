@@ -12,6 +12,7 @@ import { parseHash } from "./../utils/url"
 import { settingsValues } from "./../utils/settings"
 
 import PlaylistSelect from "./PlaylistSelect"
+import PlaylistDirectInput from "./PlaylistDirectInput"
 
 import "./BootstrapImport.scss"
 import "react-toastify/dist/ReactToastify.css"
@@ -113,6 +114,10 @@ function App() {
                 {loginAlright && (
                     <>
                         <PlaylistSelect
+                            spotifyApi={spotify}
+                            plSet={setSelectedPl}
+                        />
+                        <PlaylistDirectInput
                             spotifyApi={spotify}
                             plSet={setSelectedPl}
                         />

@@ -1,6 +1,6 @@
 {
     "name": "goodvibesfilter",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "GoodVibesFilter macht deine Playlists frei von Deutschrap",
     "keywords": [
         "playlist",
@@ -32,18 +32,18 @@
         "eject": "react-scripts eject"
     },
     "dependencies": {
-        "bootstrap": "^4.5",
+        "bootstrap": "^4.6",
         "node-sass": "^4.0",
         "react": "^17.0",
         "react-dom": "^17.0",
         "react-scripts": "^4.0",
-        "react-toastify": "^6.1",
+        "react-toastify": "^7.0",
         "spotify-web-api-js": "^1.5",
         "universal-cookie": "^4.0",
         "uuid": "^8.3"
     },
     "devDependencies": {
-        "prettier": "^2.1"
+        "prettier": "^2.2"
     },
     "private": true,
     "eslintConfig": {
