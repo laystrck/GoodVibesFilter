@@ -13,6 +13,7 @@ import { settingsValues } from "./../utils/settings"
 
 import PlaylistSelect from "./PlaylistSelect"
 import PlaylistDirectInput from "./PlaylistDirectInput"
+import UmamiStatistics from "./UmamiStatistics"
 
 import "./BootstrapImport.scss"
 import "react-toastify/dist/ReactToastify.css"
@@ -145,10 +146,18 @@ function App() {
                 <hr className="footer-sep" />
                 <p>
                     {new Date().getFullYear()} • Kontakt via E-Mail:{" "}
-                    <a href="mailto:hey@layst.rocks">hey@layst.rocks</a>
+                    <a href="mailto:hey@layst.rocks">hey@layst.rocks</a> •{" "}
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://privaport.landway.space/layst.rocks/"
+                    >
+                        Datenschutzerklärung
+                    </a>
                 </p>
             </div>
             <ToastContainer />
+            <UmamiStatistics />
         </div>
     )
 }
