@@ -56,6 +56,10 @@ const filterUris = (trackObjs) => {
     const filteredUris = []
 
     trackObjs.forEach((trackObj) => {
+        if (trackObj.track === null) {
+            return
+        }
+
         const trUri = trackObj.track.uri
         const trArtists = trackObj.track.artists
 

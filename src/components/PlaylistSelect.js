@@ -38,7 +38,9 @@ function PlaylistSelect(props) {
 
     return (
         <div className="playlist-select-area">
-            <label htmlFor="plSelect">Welche Playlist möchtest du auswählen?</label>
+            <label htmlFor="plSelect">
+                Welche Playlist möchtest du auswählen?
+            </label>
             <select
                 defaultValue="-1"
                 onChange={handlePlChange}
