@@ -107,7 +107,7 @@ function App() {
                 <p className="spotify-login-area">
                     <button
                         onClick={handleLoginClick}
-                        className="btn btn-spotify"
+                        className="btn btn-spotify text-white"
                     >
                         Mit Spotify anmelden
                     </button>
@@ -134,7 +134,7 @@ function App() {
                                 <p>
                                     <button
                                         onClick={handleActionClick}
-                                        className="btn btn-primary"
+                                        className="btn btn-appprimary text-white"
                                     >
                                         Alles klar, los geht's!
                                     </button>

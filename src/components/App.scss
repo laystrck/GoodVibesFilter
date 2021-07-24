@@ -42,6 +42,11 @@ html, body, #root, .container {
     margin-right: auto;
 }
 
+.playlist-select-area label,
+.playlist-input-area label {
+    margin-bottom: 6px;
+}
+
 .playlist-select-area {
     margin-top: 32px;
 }

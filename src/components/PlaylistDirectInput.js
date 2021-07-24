@@ -57,7 +57,7 @@ function PlaylistDirectInput(props) {
     return (
         <div className="playlist-input-area">
             <small>
-                <label for="plInput">
+                <label htmlFor="plInput">
                     Du kannst alternativ auch einen Playlist-Link hier eingeben:
                 </label>
             </small>

@@ -38,11 +38,11 @@ function PlaylistSelect(props) {
 
     return (
         <div className="playlist-select-area">
-            <label for="plSelect">Welche Playlist möchtest du auswählen?</label>
+            <label htmlFor="plSelect">Welche Playlist möchtest du auswählen?</label>
             <select
                 defaultValue="-1"
                 onChange={handlePlChange}
-                className="custom-select"
+                className="form-select"
                 id="plSelect"
             >
                 <option value="-1">Bitte wähle eine Playlist...</option>
