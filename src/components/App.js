@@ -148,6 +148,14 @@ function App() {
                     <a href={"mailto:" + process.env.REACT_APP_CONTACT_EMAIL}>
                         {process.env.REACT_APP_CONTACT_EMAIL}
                     </a>{" "}
+                    • Open Source auf{" "}
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/laystrck/GoodVibesFilter"
+                    >
+                        GitHub
+                    </a>{" "}
                     •{" "}
                     <a
                         target="_blank"

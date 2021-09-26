@@ -14,7 +14,7 @@
     "bugs": {
         "url": "https://github.com/laystrck/GoodVibesFilter/issues"
     },
-    "license": "UNLICENSED",
+    "license": "MIT",
     "author": {
         "name": "Jarne",
         "email": "jarne@layst.rocks",
@@ -45,7 +45,6 @@
     "devDependencies": {
         "prettier": "^2.4"
     },
-    "private": true,
     "eslintConfig": {
         "extends": [
             "react-app"
