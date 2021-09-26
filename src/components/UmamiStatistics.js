@@ -6,14 +6,18 @@ import { useEffect } from "react"
 
 function UmamiStatistics() {
     useEffect(() => {
+        if (process.env.REACT_APP_ENABLE_UMAMI_STATISTICS !== "true") {
+            return
+        }
+
         const umamiScript = document.createElement("script")
 
-        umamiScript.src = "https://umami.landway.space/umami.js"
+        umamiScript.src = process.env.REACT_APP_UMAMI_URL
         umamiScript.async = true
         umamiScript.defer = true
         umamiScript.setAttribute(
             "data-website-id",
-            "553f3f44-d949-41f4-929d-3a55656888ee"
+            process.env.REACT_APP_UMAMI_ID
         )
         umamiScript.setAttribute("data-do-not-track", "true")
 

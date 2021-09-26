@@ -9,7 +9,6 @@ import { v4 as uuidv4 } from "uuid"
 import { ToastContainer, toast } from "react-toastify"
 import { createFilteredPlaylist } from "./../logic/playlist"
 import { parseHash } from "./../utils/url"
-import { settingsValues } from "./../utils/settings"
 
 import PlaylistSelect from "./PlaylistSelect"
 import PlaylistDirectInput from "./PlaylistDirectInput"
@@ -63,9 +62,9 @@ function App() {
 
         window.location.href =
             "https://accounts.spotify.com/authorize?client_id=" +
-            settingsValues.spotify_client_id +
+            process.env.REACT_APP_SPOTIFY_CLIENT_ID +
             "&response_type=token&redirect_uri=" +
-            settingsValues.encoded_redirect_uri +
+            process.env.REACT_APP_ENCODED_REDIRECT_URI +
             "&state=" +
             v4id +
             "&scope=playlist-read-private,playlist-read-collaborative,playlist-modify-private"
@@ -146,11 +145,14 @@ function App() {
                 <hr className="footer-sep" />
                 <p>
                     {new Date().getFullYear()} • Kontakt via E-Mail:{" "}
-                    <a href="mailto:hey@layst.rocks">hey@layst.rocks</a> •{" "}
+                    <a href={"mailto:" + process.env.REACT_APP_CONTACT_EMAIL}>
+                        {process.env.REACT_APP_CONTACT_EMAIL}
+                    </a>{" "}
+                    •{" "}
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://privaport.landway.space/layst.rocks/"
+                        href={process.env.REACT_APP_PRIVACY_POLICY_URL}
                     >
                         Datenschutzerklärung
                     </a>
