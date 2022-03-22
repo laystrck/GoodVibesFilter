@@ -13,10 +13,7 @@ function PlaylistSelect(props) {
     useEffect(() => {
         spotify.getUserPlaylists().then(
             (data) => setPlaylists(data.items),
-            () =>
-                toast("Oops, we couldn't sign you in at Spotify!", {
-                    className: "cst-error-toast",
-                })
+            () => toast.error("Oops, we couldn't sign you in at Spotify!")
         )
     }, [spotify, setPlaylists])
 

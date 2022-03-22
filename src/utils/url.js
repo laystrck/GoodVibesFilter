@@ -2,7 +2,13 @@
  * GoodVibesFilter | URL utils
  */
 
-exports.parseHash = (hash) => {
+/**
+ * Parse the parameters of a URL hash
+ *
+ * @param {string} hash URL hash
+ * @returns string[] parameters of the hash
+ */
+export const parseHash = (hash) => {
     let params = []
 
     hash = hash.substr(1)

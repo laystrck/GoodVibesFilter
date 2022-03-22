@@ -45,11 +45,8 @@ function PlaylistDirectInput(props) {
                     name: data.name,
                 }),
             () =>
-                toast(
-                    "Oops, that doesn't seem to be a valid playlist! Is it publicly available?",
-                    {
-                        className: "cst-error-toast",
-                    }
+                toast.error(
+                    "Oops, that doesn't seem to be a valid playlist! Is it publicly available?"
                 )
         )
     }

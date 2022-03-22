@@ -49,9 +49,7 @@ function App() {
 
             loginAlright = true
         } else {
-            toast("Oops, there's been a problem with the Spotify login!", {
-                className: "cst-error-toast",
-            })
+            toast.error("Oops, there's been a problem with the Spotify login!")
         }
     }
 
@@ -77,14 +75,12 @@ function App() {
 
         createFilteredPlaylist(spotify, selectedPl.id, filterList.artists)
             .then(() => {
-                toast("We've saved your playlist to your Spotify account!", {
-                    className: "cst-success-toast",
-                })
+                toast.success(
+                    "We've saved your playlist to your Spotify account!"
+                )
             })
             .catch(() => {
-                toast("Oops, an error has occurred!", {
-                    className: "cst-error-toast",
-                })
+                toast.error("Oops, an error has occurred!")
             })
     }
 

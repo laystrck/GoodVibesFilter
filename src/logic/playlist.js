@@ -1,7 +1,15 @@
 /**
- * GoodVibesFilter | playlist editing logic
+ * GoodVibesFilter | playlist filtering logic
  */
 
+/**
+ * Filter a playlist using the given filter list
+ *
+ * @param {object} spotify Spotify API
+ * @param {string} plId playlist ID
+ * @param {string[]} filterList List of the artists which should be filtered
+ * @returns {Promise} Nothing on success or error code
+ */
 export const createFilteredPlaylist = (spotify, plId, filterList) => {
     return new Promise((resolve, reject) => {
         spotify.getMe().then(
@@ -50,6 +58,13 @@ export const createFilteredPlaylist = (spotify, plId, filterList) => {
     })
 }
 
+/**
+ * Generate a list of filtered Spotify URI's using the given filter list
+ *
+ * @param {object[]} trackObjs Spotify track objects
+ * @param {string[]} filterList List of the artists which should be filtered
+ * @returns {string|null} List of filtered Spotify URI's or null on failure
+ */
 const filterUris = (trackObjs, filterList) => {
     const filteredUris = []
 
