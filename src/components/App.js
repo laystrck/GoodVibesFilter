@@ -44,12 +44,9 @@ function App() {
 
             loginAlright = true
         } else {
-            toast(
-                "Hoppla, es ist ein Problem bei der Spotify-Anmeldung aufgetreten!",
-                {
-                    className: "cst-error-toast",
-                }
-            )
+            toast("Oops, there's been a problem with the Spotify login!", {
+                className: "cst-error-toast",
+            })
         }
     }
 
@@ -75,15 +72,12 @@ function App() {
 
         createFilteredPlaylist(spotify, selectedPl.id)
             .then(() => {
-                toast(
-                    "Wir haben deine Playlist in deinem Spotify-Konto gespeichert!",
-                    {
-                        className: "cst-success-toast",
-                    }
-                )
+                toast("We've saved your playlist to your Spotify account!", {
+                    className: "cst-success-toast",
+                })
             })
             .catch(() => {
-                toast("Hoppla, da ist ein Fehler aufgetreten!", {
+                toast("Oops, an error has occurred!", {
                     className: "cst-error-toast",
                 })
             })
@@ -99,16 +93,17 @@ function App() {
                     </span>
                 </h1>
                 <p>
-                    Du hast genug von Deutschrap auf deinen Spotify-Playlists?
-                    Die Charts sind voll damit? Kein Problem - GoodVibesFilter
-                    macht deine Playlists ganz einfach Deutschrap-frei!
+                    You've had enough of genres you hate on your Spotify
+                    playlists? The charts are full of it? No problem -
+                    GoodVibesFilter filters your playlists easily from unwanted
+                    genres!
                 </p>
                 <p className="spotify-login-area">
                     <button
                         onClick={handleLoginClick}
                         className="btn btn-spotify text-white"
                     >
-                        Mit Spotify anmelden
+                        Log in with Spotify
                     </button>
                 </p>
                 {loginAlright && (
@@ -124,18 +119,18 @@ function App() {
                         {selectedPl.id !== "-1" && (
                             <>
                                 <p className="action-description">
-                                    Wir werden eine neue Playlist mit dem Namen
+                                    We will create a new playlist with the name
                                     "{selectedPl.name} (GoodVibesFilter)" in
-                                    deinem Spotify-Konto erstellen, die kein
-                                    Deutschrap mehr enthält. Die originale
-                                    Playlist wird davon nicht berührt.
+                                    your your Spotify account, which will not
+                                    contain Deutschrap anymore. The original
+                                    Playlist will not be affected.
                                 </p>
                                 <p>
                                     <button
                                         onClick={handleActionClick}
                                         className="btn btn-appprimary text-white"
                                     >
-                                        Alles klar, los geht's!
+                                        All right, here we go!
                                     </button>
                                 </p>
                             </>
@@ -144,11 +139,11 @@ function App() {
                 )}
                 <hr className="footer-sep" />
                 <p>
-                    {new Date().getFullYear()} • Kontakt via E-Mail:{" "}
+                    {new Date().getFullYear()} • contact via e-mail:{" "}
                     <a href={"mailto:" + process.env.REACT_APP_CONTACT_EMAIL}>
                         {process.env.REACT_APP_CONTACT_EMAIL}
                     </a>{" "}
-                    • Open Source auf{" "}
+                    • Open Source on{" "}
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
@@ -162,7 +157,7 @@ function App() {
                         rel="noopener noreferrer"
                         href={process.env.REACT_APP_PRIVACY_POLICY_URL}
                     >
-                        Datenschutzerklärung
+                        privacy policy
                     </a>
                 </p>
             </div>

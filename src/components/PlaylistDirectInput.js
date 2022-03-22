@@ -46,7 +46,7 @@ function PlaylistDirectInput(props) {
                 }),
             () =>
                 toast(
-                    "Hoppla, das scheint keine gültige Playlist zu sein! Ist sie öffentlich abrufbar?",
+                    "Oops, that doesn't seem to be a valid playlist! Is it publicly available?",
                     {
                         className: "cst-error-toast",
                     }
@@ -58,12 +58,12 @@ function PlaylistDirectInput(props) {
         <div className="playlist-input-area">
             <small>
                 <label htmlFor="plInput">
-                    Du kannst alternativ auch einen Playlist-Link hier eingeben:
+                    You can alternatively enter a playlist link here:
                 </label>
             </small>
             <input
                 onChange={handleInputChange}
-                placeholder="Playlist-Link aus Spotify, im Format: https://open.spotify.com/playlist/12345..."
+                placeholder="Playlist link from Spotify, in format: https://open.spotify.com/playlist/12345..."
                 className="form-control form-control-sm"
                 id="plInput"
             />

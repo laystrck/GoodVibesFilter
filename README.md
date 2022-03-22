@@ -1,5 +1,5 @@
 <h1 align="center">GoodVibesFilter</h1>
-<p align="center">GoodVibesFilter macht deine Playlists frei von Deutschrap!</p>
+<p align="center">GoodVibesFilter filters unwanted genres from your playlists!</p>
 
 <br>
 
@@ -24,31 +24,31 @@
 
 ## 📙 Description
 
-GoodVibesFilter macht deine Playlists frei von Deutschrap, höre nur noch gute Musik in deinen Playlists!
+GoodVibesFilter filters unwanted genres from your playlists, listen to good music only in your playlists!
 
-Hier sind einige Screenshots der Web-Anwendung:
+Here are some screenshots of the web application:
 
 <img src=".github/.media/screenshot1.png" alt="Screenshot of the front page">
 
 <img src=".github/.media/screenshot2.png" alt="Screenshot after creating a filtered playlist">
 
-GoodVibesFilter kann unter [goodvibesfilter.layst.rocks](https://goodvibesfilter.layst.rocks) ausprobiert werden.
+GoodVibesFilter can be used on [goodvibesfilter.layst.rocks](https://goodvibesfilter.layst.rocks).
 
 ## 🖥 Usage
 
-GoodVibesFilter basiert auf React und benötigt kein Server-Backend, sondern kann einfach als statische Web-Anwendung ausgeführt werden. Die Anwendung kommuniziert dabei direkt über den Browser mit der Spotify-API.
+GoodVibesFilter is based on React and needs no server backend, but can be hosted as a static web page. The application communicates with the Spotify API directly inside the browser.
 
 ### Environment variables
 
-| Env variable                      | Description                                                                                         |
-| --------------------------------- | --------------------------------------------------------------------------------------------------- |
-| REACT_APP_SPOTIFY_CLIENT_ID       | Client ID der [Spotify-API-Anwendung](https://developer.spotify.com)                                |
-| REACT_APP_ENCODED_REDIRECT_URI    | URL, unter der die Web-Anwendung installiert ist, als URL kodiert (z. B. https%3A%2F%2Fexample.com) |
-| REACT_APP_CONTACT_EMAIL           | E-Mail-Adresse als Kontakt, die auf der Startseite angezeigt wird                                   |
-| REACT_APP_PRIVACY_POLICY_URL      | Link zur Datenschutzerklärung auf der Startseite                                                    |
-| REACT_APP_ENABLE_UMAMI_STATISTICS | Statistiken mit Umami erfassen                                                                      |
-| REACT_APP_UMAMI_URL               | URL der Umami-Installation                                                                          |
-| REACT_APP_UMAMI_ID                | ID der Umami-Installation                                                                           |
+| Env variable                      | Description                                                                      |
+| --------------------------------- | -------------------------------------------------------------------------------- |
+| REACT_APP_SPOTIFY_CLIENT_ID       | Client ID of the [Spotify API app](https://developer.spotify.com)                |
+| REACT_APP_ENCODED_REDIRECT_URI    | URL where the web app is hosted, encoded as URL (e.g. https%3A%2F%2Fexample.com) |
+| REACT_APP_CONTACT_EMAIL           | Contact e-mail address shown on home page                                        |
+| REACT_APP_PRIVACY_POLICY_URL      | Link to privacy policy on home page                                              |
+| REACT_APP_ENABLE_UMAMI_STATISTICS | Collect statistics with [Umami](https://github.com/mikecao/umami)                |
+| REACT_APP_UMAMI_URL               | URL of the Umami instance                                                        |
+| REACT_APP_UMAMI_ID                | ID of the Umami site                                                             |
 
 ### Deployment
 

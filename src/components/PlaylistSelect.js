@@ -14,7 +14,7 @@ function PlaylistSelect(props) {
         spotify.getUserPlaylists().then(
             (data) => setPlaylists(data.items),
             () =>
-                toast("Hoppla, wir konnten dich nicht bei Spotify anmelden!", {
+                toast("Oops, we couldn't sign you in at Spotify!", {
                     className: "cst-error-toast",
                 })
         )
@@ -39,7 +39,7 @@ function PlaylistSelect(props) {
     return (
         <div className="playlist-select-area">
             <label htmlFor="plSelect">
-                Welche Playlist möchtest du auswählen?
+                Which playlist do you want to choose?
             </label>
             <select
                 defaultValue="-1"
@@ -47,7 +47,7 @@ function PlaylistSelect(props) {
                 className="form-select"
                 id="plSelect"
             >
-                <option value="-1">Bitte wähle eine Playlist...</option>
+                <option value="-1">Please choose a playlist...</option>
                 {playlists.map((plData, pI) => (
                     <option key={pI} value={pI}>
                         {plData.name}

@@ -1,7 +1,7 @@
 {
     "name": "goodvibesfilter",
     "version": "1.0.2",
-    "description": "GoodVibesFilter macht deine Playlists frei von Deutschrap",
+    "description": "GoodVibesFilter filters unwanted genres from your playlists",
     "keywords": [
         "playlist",
         "music",
