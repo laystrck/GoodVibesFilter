@@ -136,7 +136,7 @@ function App() {
                                                 onClick={handleActionClick}
                                                 className="btn btn-appprimary text-white"
                                             >
-                                                All right, here we go!
+                                                Okay, let's go!
                                             </button>
                                         </p>
                                     </>
