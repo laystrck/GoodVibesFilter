@@ -11,6 +11,7 @@ import { createFilteredPlaylist } from "./../logic/playlist"
 import { parseHash } from "./../utils/url"
 
 import PlaylistSelect from "./PlaylistSelect"
+import FilterListSelect from "./FilterListSelect"
 import PlaylistDirectInput from "./PlaylistDirectInput"
 import UmamiStatistics from "./UmamiStatistics"
 
@@ -27,6 +28,10 @@ function App() {
     const [selectedPl, setSelectedPl] = useState({
         id: "-1",
         name: "...",
+    })
+    const [filterList, setFilterList] = useState({
+        name: "...",
+        artists: [],
     })
 
     let spotify
@@ -70,7 +75,7 @@ function App() {
     function handleActionClick(e) {
         e.preventDefault()
 
-        createFilteredPlaylist(spotify, selectedPl.id)
+        createFilteredPlaylist(spotify, selectedPl.id, filterList.artists)
             .then(() => {
                 toast("We've saved your playlist to your Spotify account!", {
                     className: "cst-success-toast",
@@ -118,21 +123,28 @@ function App() {
                         />
                         {selectedPl.id !== "-1" && (
                             <>
-                                <p className="action-description">
-                                    We will create a new playlist with the name
-                                    "{selectedPl.name} (GoodVibesFilter)" in
-                                    your your Spotify account, which will not
-                                    contain Deutschrap anymore. The original
-                                    Playlist will not be affected.
-                                </p>
-                                <p>
-                                    <button
-                                        onClick={handleActionClick}
-                                        className="btn btn-appprimary text-white"
-                                    >
-                                        All right, here we go!
-                                    </button>
-                                </p>
+                                <FilterListSelect flSet={setFilterList} />
+                                {filterList.name !== "..." && (
+                                    <>
+                                        <p className="action-description">
+                                            We will create a new playlist named
+                                            "{selectedPl.name}{" "}
+                                            (GoodVibesFilter)" in your your
+                                            Spotify account, which will not
+                                            contain {filterList.name} anymore.
+                                            The original playlist won't be
+                                            touched.
+                                        </p>
+                                        <p>
+                                            <button
+                                                onClick={handleActionClick}
+                                                className="btn btn-appprimary text-white"
+                                            >
+                                                All right, here we go!
+                                            </button>
+                                        </p>
+                                    </>
+                                )}
                             </>
                         )}
                     </>

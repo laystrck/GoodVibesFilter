@@ -2,9 +2,7 @@
  * GoodVibesFilter | playlist editing logic
  */
 
-import { filteredArtistsList } from "./../utils/filteredArtists"
-
-export const createFilteredPlaylist = (spotify, plId) => {
+export const createFilteredPlaylist = (spotify, plId, filterList) => {
     return new Promise((resolve, reject) => {
         spotify.getMe().then(
             (data) => {
@@ -13,7 +11,7 @@ export const createFilteredPlaylist = (spotify, plId) => {
                 spotify.getPlaylist(plId).then(
                     (data) => {
                         const plName = data.name
-                        const fUris = filterUris(data.tracks.items)
+                        const fUris = filterUris(data.tracks.items, filterList)
 
                         spotify
                             .createPlaylist(uId, {
@@ -52,7 +50,7 @@ export const createFilteredPlaylist = (spotify, plId) => {
     })
 }
 
-const filterUris = (trackObjs) => {
+const filterUris = (trackObjs, filterList) => {
     const filteredUris = []
 
     trackObjs.forEach((trackObj) => {
@@ -68,7 +66,7 @@ const filterUris = (trackObjs) => {
         trArtists.forEach((artist) => {
             const arName = artist.name
 
-            if (filteredArtistsList.includes(arName)) {
+            if (filterList.includes(arName)) {
                 mustBeFiltered = true
             }
         })
