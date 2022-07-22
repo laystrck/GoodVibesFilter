@@ -9,10 +9,11 @@ $spotify-color: #1db954;
 
 $theme-colors: (
     "appprimary": $app-primary-color,
-    "spotify": $spotify-color
+    "spotify": $spotify-color,
 );
 
 @import "./../../node_modules/bootstrap/scss/variables";
+@import "./../../node_modules/bootstrap/scss/maps";
 @import "./../../node_modules/bootstrap/scss/mixins";
 @import "./../../node_modules/bootstrap/scss/utilities";
 
