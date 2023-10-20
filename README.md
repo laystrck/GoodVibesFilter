@@ -1,3 +1,7 @@
+<p align="center">
+    <img src=".github/.media/logo.png" width="144" height="144" alt="GoodVibesFilter app logo">
+</p>
+
 <h1 align="center">GoodVibesFilter</h1>
 <p align="center">GoodVibesFilter filters unwanted genres from your playlists!</p>
 
@@ -17,10 +21,7 @@
 
 ##
 
-[• Description](#-description)  
-[• Usage](#-usage)  
-[• Contribution](#-contribution)  
-[• License](#%EF%B8%8F-license)
+[Description](#-description) | [Usage](#-usage) | [Contribution](#-contribution) | [License](#%EF%B8%8F-license)
 
 ## 📙 Description
 
