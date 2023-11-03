@@ -1,0 +1,6 @@
+{
+    "schedule": ["before 5am"],
+    "prHourlyLimit": 2,
+    "prConcurrentLimit": 3,
+    "enabledManagers": ["npm"]
+}
