@@ -37,15 +37,15 @@
         "react-dom": "^18.2",
         "react-scripts": "^5.0",
         "react-toastify": "^9.1",
-        "sass": "^1.64",
+        "sass": "^1.69",
         "spotify-web-api-js": "^1.5",
-        "universal-cookie": "^4.0",
+        "universal-cookie": "^6.1",
         "uuid": "^9.0"
     },
     "devDependencies": {
-        "prettier": "^3.0"
+        "prettier": "^3.1"
     },
-    "packageManager": "yarn@3.6.4",
+    "packageManager": "yarn@4.0.2",
     "eslintConfig": {
         "extends": [
             "react-app"
