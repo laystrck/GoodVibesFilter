@@ -4347,10 +4347,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clsx@npm:^1.1.1":
-  version: 1.2.1
-  resolution: "clsx@npm:1.2.1"
-  checksum: 34dead8bee24f5e96f6e7937d711978380647e936a22e76380290e35486afd8634966ce300fc4b74a32f3762c7d4c0303f442c3e259f4ce02374eb0c82834f27
+"clsx@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "clsx@npm:2.1.0"
+  checksum: c09c00ad14f638366ca814097e6cab533dfa1972a358da5b557be487168acbb25b4c1395e89ffa842a8a61ba87a462d2b4885bc9d4f8410b598f3cb339599cdb
   languageName: node
   linkType: hard
 
@@ -6609,7 +6609,7 @@ __metadata:
     react: "npm:^18.2"
     react-dom: "npm:^18.2"
     react-scripts: "npm:^5.0"
-    react-toastify: "npm:^9.1"
+    react-toastify: "npm:^10.0.0"
     sass: "npm:^1.69"
     spotify-web-api-js: "npm:^1.5"
     universal-cookie: "npm:^7.0.0"
@@ -10730,15 +10730,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-toastify@npm:^9.1":
-  version: 9.1.3
-  resolution: "react-toastify@npm:9.1.3"
+"react-toastify@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "react-toastify@npm:10.0.0"
   dependencies:
-    clsx: "npm:^1.1.1"
+    clsx: "npm:^2.1.0"
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
-  checksum: 51de1e51e9357a24773fbcd45a4db18bf74b8ec40d86a2bfb4a4fee23ca4f9fffdac5dfb7a3c21baea39971f72f72dfcdc79403a6de006f74d69e7bc12f8b3e0
+  checksum: 2cf1dbe0decf2b7b78497e8c06d75bbecb0b6d0eb60782d0629116e2f53d22f125f32c5f1a6be35b30619a4be44f2bf3a9d3b7e52bfcdf6664cbbe4ef51e4078
   languageName: node
   linkType: hard
 
