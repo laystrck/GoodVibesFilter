@@ -10731,14 +10731,14 @@ __metadata:
   linkType: hard
 
 "react-toastify@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "react-toastify@npm:10.0.0"
+  version: 10.0.3
+  resolution: "react-toastify@npm:10.0.3"
   dependencies:
     clsx: "npm:^2.1.0"
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
-  checksum: 2cf1dbe0decf2b7b78497e8c06d75bbecb0b6d0eb60782d0629116e2f53d22f125f32c5f1a6be35b30619a4be44f2bf3a9d3b7e52bfcdf6664cbbe4ef51e4078
+  checksum: 1494fa8e84a21ffeb1a7391037439f6597bf56a92120ff7b5db2f4fde0ed40cb0f098abb4909ad6eedffa9b555a41b6da3c32e47c9269eacf71ed30249619358
   languageName: node
   linkType: hard
 
