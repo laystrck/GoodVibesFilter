@@ -87,9 +87,7 @@ function App() {
     return (
         <div className="container center-content">
             <div className="content-box text-center">
-                <h1 className="main-title">
-                    GoodVibesFilter
-                </h1>
+                <h1 className="fw-semibold">GoodVibesFilter</h1>
                 <p>
                     You've had enough of genres you hate on your Spotify
                     playlists? The charts are full of it? No problem -

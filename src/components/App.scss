@@ -14,23 +14,16 @@ body,
 }
 
 .content-box {
+    max-width: 720px;
+
+    margin-left: auto;
+    margin-right: auto;
+
     margin-top: auto;
     margin-bottom: auto;
 
     padding-top: 24px;
     padding-bottom: 24px;
-}
-
-.main-title {
-    font-size: 10vw;
-    font-weight: 700;
-}
-
-@media (min-width: 992px) {
-    .main-title {
-        font-size: 72px;
-        font-weight: 700;
-    }
 }
 
 .spotify-login-area {
@@ -39,7 +32,7 @@ body,
 
 .playlist-select-area,
 .playlist-input-area {
-    max-width: 576px;
+    max-width: 540px;
 
     margin-left: auto;
     margin-right: auto;
