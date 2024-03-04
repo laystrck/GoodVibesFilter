@@ -29,11 +29,9 @@ GoodVibesFilter filters unwanted genres from your playlists, listen to good musi
 
 Here are some screenshots of the web application:
 
-<img src=".github/.media/screenshot1.png" alt="Screenshot of the front page">
+<img src=".github/.media/screenshot-home.png" alt="Screenshot of the start page">
 
-<img src=".github/.media/screenshot2.png" alt="Screenshot after creating a filtered playlist">
-
-GoodVibesFilter can be used on [goodvibesfilter.layst.rocks](https://goodvibesfilter.layst.rocks).
+<img src=".github/.media/screenshot-action.png" alt="Screenshot after creating a filtered playlist">
 
 ## 🖥 Usage
 
@@ -51,27 +49,21 @@ GoodVibesFilter is based on React and needs no server backend, but can be hosted
 | REACT_APP_UMAMI_URL               | URL of the Umami instance                                                        |
 | REACT_APP_UMAMI_ID                | ID of the Umami site                                                             |
 
-### Deployment
+### Deploy the application locally
 
-First, clone the repository using:
-
-```
-$ git clone https://github.com/laystrck/GoodVibesFilter.git
-```
-
-Then, install the dependencies using:
+Clone the repository and install the dependencies using:
 
 ```
 $ yarn install
 ```
 
-Finally, run:
+Then run this command to build the web app:
 
 ```
 $ yarn build
 ```
 
-The built website will be saved in the `build`-folder, just open the `index.html`-file in your browser.
+The built website will be available in the `dist`-folder, just open the `index.html`-file in your browser or upload the files to a web server.
 
 ## 🙋‍ Contribution
 
