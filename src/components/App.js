@@ -88,10 +88,7 @@ function App() {
         <div className="container center-content">
             <div className="content-box text-center">
                 <h1 className="main-title">
-                    GoodVibesFilter{" "}
-                    <span role="img" aria-label="CD & cool">
-                        💿😎
-                    </span>
+                    GoodVibesFilter
                 </h1>
                 <p>
                     You've had enough of genres you hate on your Spotify
@@ -102,7 +99,7 @@ function App() {
                 <p className="spotify-login-area">
                     <button
                         onClick={handleLoginClick}
-                        className="btn btn-spotify text-white"
+                        className="btn btn-secondary text-white"
                     >
                         Log in with Spotify
                     </button>
@@ -134,7 +131,7 @@ function App() {
                                         <p>
                                             <button
                                                 onClick={handleActionClick}
-                                                className="btn btn-appprimary text-white"
+                                                className="btn btn-primary text-white"
                                             >
                                                 Okay, let's go!
                                             </button>
@@ -151,7 +148,7 @@ function App() {
                     <a href={"mailto:" + process.env.REACT_APP_CONTACT_EMAIL}>
                         {process.env.REACT_APP_CONTACT_EMAIL}
                     </a>{" "}
-                    • Open Source on{" "}
+                    • <b>GoodVibesFilter</b> is open source on{" "}
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
