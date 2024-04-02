@@ -12485,12 +12485,12 @@ __metadata:
   linkType: hard
 
 "universal-cookie@npm:^7.0.0":
-  version: 7.1.2
-  resolution: "universal-cookie@npm:7.1.2"
+  version: 7.1.4
+  resolution: "universal-cookie@npm:7.1.4"
   dependencies:
     "@types/cookie": "npm:^0.6.0"
     cookie: "npm:^0.6.0"
-  checksum: 10c0/c140520d7a8c92b07eee7265160efcd1299321d37d121a5b46a568a8f1391ca5f074b793fd425220882812bd7f23c324b85e092bbfe22c718f6cd76176b7400c
+  checksum: 10c0/076b8dfe136621391778abc0ac536a016f4abadbf88ff6a82655af0d7d7dc9870768178d03c92ac45eb1c916add832e7658693c219ddb11ff6e80d22633543d4
   languageName: node
   linkType: hard
 
