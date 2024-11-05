@@ -40,7 +40,7 @@
         "sass": "^1.69",
         "spotify-web-api-js": "^1.5",
         "universal-cookie": "^7.0.0",
-        "uuid": "^10.0.0"
+        "uuid": "^11.0.0"
     },
     "devDependencies": {
         "prettier": "^3.1"
