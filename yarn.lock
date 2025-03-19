@@ -12645,11 +12645,11 @@ __metadata:
   linkType: hard
 
 "universal-cookie@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "universal-cookie@npm:8.0.0"
+  version: 8.0.1
+  resolution: "universal-cookie@npm:8.0.1"
   dependencies:
     cookie: "npm:^1.0.2"
-  checksum: 10c0/88b790b6fea4a376f3ebf4573fafad6f4c1e86dee5b15bee5791afe902ebea9a278b0cfaea7d8eee8b660a2bdb87b2cca9eaab41aa2525488492e227c4cc2123
+  checksum: 10c0/96b1f2eba8941e590892513ab3220fccad9606485452d2443f86c69388a0c663937feb386a2911d2dec5796840ae7af155c6deef8712906a931ae8a30ae93485
   languageName: node
   linkType: hard
 
