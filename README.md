@@ -63,7 +63,7 @@ Then run this command to build the web app:
 $ yarn build
 ```
 
-The built website will be available in the `build`-folder, just open the `index.html`-file in your browser or upload the files to a web server.
+The built website will be available in the `dist`-folder, just open the `index.html`-file in your browser or upload the files to a web server.
 
 ## 🙋‍ Contribution
 

@@ -1,0 +1,14 @@
+{
+    "root": true,
+    "extends": ["react-app"],
+    "rules": {
+        "react-hooks/exhaustive-deps": "off"
+    },
+    "env": {
+        "browser": true
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    }
+}
