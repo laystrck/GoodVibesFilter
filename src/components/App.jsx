@@ -62,9 +62,9 @@ function App() {
 
         window.location.href =
             "https://accounts.spotify.com/authorize?client_id=" +
-            process.env.REACT_APP_SPOTIFY_CLIENT_ID +
+            import.meta.env.REACT_APP_SPOTIFY_CLIENT_ID +
             "&response_type=token&redirect_uri=" +
-            process.env.REACT_APP_ENCODED_REDIRECT_URI +
+            import.meta.env.REACT_APP_ENCODED_REDIRECT_URI +
             "&state=" +
             v4id +
             "&scope=playlist-read-private,playlist-read-collaborative,playlist-modify-private"
@@ -143,8 +143,12 @@ function App() {
                 <hr className="footer-sep" />
                 <p>
                     {new Date().getFullYear()} • contact via e-mail:{" "}
-                    <a href={"mailto:" + process.env.REACT_APP_CONTACT_EMAIL}>
-                        {process.env.REACT_APP_CONTACT_EMAIL}
+                    <a
+                        href={
+                            "mailto:" + import.meta.env.REACT_APP_CONTACT_EMAIL
+                        }
+                    >
+                        {import.meta.env.REACT_APP_CONTACT_EMAIL}
                     </a>{" "}
                     • <b>GoodVibesFilter</b> is open source on{" "}
                     <a
@@ -158,7 +162,7 @@ function App() {
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href={process.env.REACT_APP_PRIVACY_POLICY_URL}
+                        href={import.meta.env.REACT_APP_PRIVACY_POLICY_URL}
                     >
                         privacy policy
                     </a>
