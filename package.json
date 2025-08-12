@@ -31,7 +31,7 @@
         "format": "prettier --write \"**/*.{js,jsx,css,scss,html,json,md}\""
     },
     "dependencies": {
-        "@vitejs/plugin-react": "^4.3.4",
+        "@vitejs/plugin-react": "^5.0.0",
         "bootstrap": "^5.3",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
